@@ -1,0 +1,55 @@
+.fa-strikethrough{
+    
+    font-size: 3rem;
+    color: #189db8;
+}
+.icon-down{
+
+    font-size: 3rem;
+    position: absolute;
+    bottom: 1rem;
+    animation: buttons2 1s alternate infinite;
+}
+.header-title{
+
+    font-size: 2rem;
+    color: white;
+    animation: leftSide 1s;
+}
+
+.header-subtitle{
+  
+    font-size: 1.5rem;
+    color: white;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    animation: rightSide 1s;
+}
+.btn{
+
+    text-decoration: none;
+    color: white;
+    background-color: $main-color;
+    border-radius: 1000px;
+    padding: 0.25rem 1rem;
+    border: none;
+    animation: buttons 1s;
+
+    &:hover{
+        color:white;
+        background-color: $main-color-light;
+    }
+}
+.lesson-card{
+
+    text-align: center;
+    padding: 1rem;
+    margin: .5rem 1rem;
+    border: 1px solid $main-font-color;
+    border-radius: 0.5rem;
+    transition: .5s ease-in-out;
+
+    &:hover{
+        transform: scale(1.1);
+    }
+}

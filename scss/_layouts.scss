@@ -1,0 +1,103 @@
+body{
+
+    font-family:Poppins, sans-serif;
+    color: $main-font-color;
+}
+
+
+.fullscreen-header{
+
+    height: 100vh;
+    flex-direction: column;
+    @include flexCenter;
+    background-image: linear-gradient(to right bottom, rgba($main-color-dark,.5) ,rgba($main-color,.5)), url('/images/laptop.jpg');
+    background-size: cover;
+    background-position-x: 50%;
+    background-position-y: center;
+}
+
+.nav{
+
+    background-color: $main-font-color;
+    padding: .4rem .4rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    text-align: center;
+
+    @include responsive(small){
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__list{
+        display: flex;
+        list-style: none;
+        justify-content: space-around;
+        align-items: center;
+
+        &-item{
+            text-decoration: none;
+            color: white;
+            margin-left: 1rem;
+
+            &:hover{
+
+               color: $main-color-light;
+            }
+        }
+    }
+}
+
+.section{
+    
+    margin: 1rem 0;
+    padding: 1rem;
+    
+    &-title{
+        text-align: center;
+        margin: 1rem;
+    }
+
+    &--accent{
+
+        background-color: $main-color;
+    }
+
+}
+
+.aboutus-grid{
+
+    display: grid;
+    grid-template-columns: minmax(auto,500px);
+    row-gap: 2rem;
+    &__item{
+        @include flexCenter;
+    }
+    &__text{
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+
+    @include responsive(medium){
+        grid-template-columns: repeat(2, minmax(auto, 500px));
+        justify-content: center;
+    }
+}
+
+.lesson-container{
+    display: flex;
+    margin: 0px;
+    flex-direction: column;
+    @include responsive(mediumx){
+        flex-direction: row;
+        
+    }
+
+    @include responsive(desktop){
+        flex-direction: row;
+    }
+}
+

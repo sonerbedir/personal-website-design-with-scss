@@ -1,0 +1,70 @@
+@keyframes leftSide{
+
+    0%{
+
+        transform: translateX(-50%);
+    }
+
+    70%{
+        transform: translateX(10%);
+
+    }
+
+    100%{
+        transform: translateX(0);
+
+    }
+}
+
+@keyframes rightSide{
+
+    0%{
+
+        transform: translateX(50%);
+    }
+
+    70%{
+        transform: translateX(-10%);
+
+    }
+
+    100%{
+        transform: translateX(0);
+
+    }
+}
+
+
+@keyframes buttons{
+
+    0%{
+
+        transform: scale(0);
+    }
+
+    70%{
+
+        transform: scale(1.2);
+    }
+
+    100%{
+
+        transform: scale(1);
+    }
+
+    
+}
+
+@keyframes buttons2{
+
+    0%{
+
+        transform: scale(.5);
+    }
+
+   
+    100%{
+
+        transform: scale(1);
+    }
+}

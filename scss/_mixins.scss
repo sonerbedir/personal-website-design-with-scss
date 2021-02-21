@@ -1,0 +1,44 @@
+@mixin flexCenter{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@mixin responsive($breakpoint){
+    
+    @if $breakpoint == small {
+
+        @media (min-width:576px){
+            @content;
+        }
+    }
+
+    @if $breakpoint == medium {
+
+        @media (min-width:500px){
+            @content;
+        }
+    }
+
+    @if $breakpoint == mediumx {
+
+        @media (min-width:768px){
+            @content;
+        }
+    }
+
+    @if $breakpoint == desktop {
+
+        @media (min-width:992px){
+            @content;
+        }
+    }
+    @if $breakpoint == large {
+
+        @media (min-width:1200px){
+            @content;
+        }
+    }
+}
